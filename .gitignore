@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Local build outputs
+dist/
+.parcel-cache/
+build/
+
+# IDE files and cache
+.vscode/
+.idea/
+.DS_Store
+*.log
+.env

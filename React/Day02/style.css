@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    position: relative;
+    left: 60px;
+    top: 10px;
+}
+
+.options {
+    padding-top: 30px;
+}
+
+.btn,
+.profile-btn {
+    margin-right: 10px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+
+}
+
+.searchbar {
+    height: 30px;
+    width: 400px;
+    position: relative;
+    top: 15px;
+}
+
+.Profile {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.middle {
+    background-color: rgb(211, 218, 189);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgb(86, 124, 99);
+    justify-content: center;
+    align-items: center;
+}
