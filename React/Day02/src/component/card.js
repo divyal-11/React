@@ -6,7 +6,17 @@ function Card(props) {
             <div style={{ textAlign: "center" }}>
                 <h2>{props.cloth}</h2>
                 <h1>{props.offer}</h1>
-                <h2>SHOP NOW</h2>
+                <button style={{ 
+                    backgroundColor: "#ff3f6c", 
+                    color: "white", 
+                    border: "none", 
+                    padding: "8px 16px", 
+                    fontWeight: "bold", 
+                    cursor: "pointer", 
+                    marginTop: "10px",
+                    borderRadius: "4px"
+                }}>Rs. {props.price}
+                </button>
             </div>
         </div>
     )
