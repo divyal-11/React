@@ -44,15 +44,130 @@ body {
 }
 
 .middle {
-    background-color: rgb(211, 218, 189);
+    background-color: #f5f5f6;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
     justify-content: center;
 }
 
-.card {
-    background-color: rgb(86, 124, 99);
-    justify-content: center;
+/* Myntra Card Layout styling */
+.myntra-card {
+    width: 220px;
+    background: #ffffff;
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.myntra-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.image-container img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.brand-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+    margin: 0;
+}
+
+.product-title {
+    font-size: 12px;
+    font-weight: 400;
+    color: #535766;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price-container {
+    display: flex;
     align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.discount-price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.original-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #7e818c;
+}
+
+.discount-percentage {
+    font-size: 12px;
+    color: #ff905a;
+    font-weight: 600;
+}
+
+.buy-button {
+    background-color: #ff3f6c;
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.2s;
+}
+
+.buy-button:hover {
+    background-color: #e63560;
+}
+
+/* Sort Dropdown styling */
+.myntra-sort-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    margin: 20px 0;
+}
+
+.myntra-sort-btn {
+    background: #ffffff;
+    border: 1px solid #d4d5d9;
+    padding: 10px 16px;
+    color: #282c3f;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.myntra-sort-btn:hover {
+    border-color: #282c3f;
+}
+
+.myntra-sort-btn strong {
+    font-weight: 700;
 }

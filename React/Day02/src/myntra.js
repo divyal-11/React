@@ -42,25 +42,13 @@ function App() {
     return (<>
 
         <Header />
-        {/* 5. The Sort Button */}
-            <div style={{ display: "flex", justifyContent: "center", margin: "20px 0" }}>
-                <button 
-                    onClick={handleSort} 
-                    style={{ 
-                        padding: "10px 20px", 
-                        backgroundColor: "#1a1a1a", 
-                        color: "white", 
-                        border: "none", 
-                        borderRadius: "5px", 
-                        cursor: "pointer", 
-                        fontSize: "16px", 
-                        fontWeight: "bold" 
-                    }}
-                >
-                    {/* Toggle the button text based on the sort direction */}
-                    Sort by Price: {sortOrder === "asc" ? "High to Low" : "Low to High"}
-                </button>
-            </div>
+        
+        {/* Sort Button styled like Myntra's Dropdown */}
+        <div className="myntra-sort-container">
+            <button onClick={handleSort} className="myntra-sort-btn">
+                Sort by: <strong>{sortOrder === "asc" ? "Price: Low to High" : sortOrder === "desc" ? "Price: High to Low" : "Recommended"}</strong>
+            </button>
+        </div>
 
         <div className="middle" style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
             {items.map((item, index) => {
