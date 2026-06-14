@@ -15,9 +15,9 @@ function Card(props) {
                 <h3 className="brand-name">Myntra Special</h3>
                 <h4 className="product-title">{props.cloth} - {props.offer}</h4>
                 <div className="price-container">
-                    <span className="discount-price">Rs. {props.price}</span>
+                    {/* <span className="discount-price">Rs. {props.price}</span> */}
                     <span className="original-price">Rs. {originalPrice}</span>
-                    <span className="discount-percentage">({discountPercent}% OFF)</span>
+                    {/* <span className="discount-percentage">({discountPercent}% OFF)</span> */}
                 </div>
                 <button className="buy-button">
                     ADD TO BAG

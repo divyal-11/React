@@ -94,9 +94,9 @@ body {
     font-weight: 400;
     color: #535766;
     margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* white-space: nowrap;
+    overflow: hidden; */
+    /* text-overflow: ellipsis; */
 }
 
 .price-container {
@@ -114,8 +114,8 @@ body {
 
 .original-price {
     font-size: 12px;
-    text-decoration: line-through;
-    color: #7e818c;
+    /* text-decoration: line-through; */
+    color: #000000e1;
 }
 
 .discount-percentage {
@@ -170,4 +170,14 @@ body {
 
 .myntra-sort-btn strong {
     font-weight: 700;
+}
+
+button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(96, 182, 196);
+    border: 1px solid #d4d5d9;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 400;
 }
